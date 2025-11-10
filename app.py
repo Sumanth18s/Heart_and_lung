@@ -4,11 +4,11 @@ import numpy as np
 import pandas as pd
 
 # ------------------ Load Models & Scalers ------------------
-heart_model = pickle.load(open("hearts_model.pkl", "rb"))
-heart_scaler = pickle.load(open("hearts_scaler.pkl", "rb"))
+heart_model = pickle.load(open("hearts_model.pkl"))
+heart_scaler = pickle.load(open("hearts_scaler.pkl"))
 
-lung_model = pickle.load(open("lungs_model.pkl", "rb"))
-lung_scaler = pickle.load(open("lungs_scaler.pkl", "rb"))
+lung_model = pickle.load(open("lungs_model.pkl"))
+lung_scaler = pickle.load(open("lungs_scaler.pkl"))
 
 # ------------------ Page Config ------------------
 st.set_page_config(page_title="Health Prediction System", page_icon="💓", layout="wide")
